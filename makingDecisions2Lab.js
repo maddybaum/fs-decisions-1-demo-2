@@ -1,5 +1,5 @@
 // For problems 1-2 use the following lines of code:
-var arr = [10,20,30,40,50,60]
+let arr = [10,20,30,40,50,60]
 
 ////////// PROBLEM 1 //////////
 /*
@@ -8,16 +8,14 @@ var arr = [10,20,30,40,50,60]
 
 //Code Here
 
-let firstItem = arr[0];
 
 ////////// PROBLEM 2 //////////
 /*
   Remove the last item from the 'arr' array and store it in a variable named 'lastItemRemoved'. Console.log the array to verify you no longer have the last item.
 */
+//You will need to use Google to look up how to delete the last item of an array in javascript
 
 //Code Here
-let lastItemRemoved = arr.pop();
-console.log(lastItemRemoved);
 
 ////////// PROBLEM 3 //////////
 
@@ -30,9 +28,7 @@ var family = ['Tyler', 'Jordan', 'Ryan', 'Alice', 'Ireland'];
 */
 
 //Code Here
-for (let i = 0; i < family.length; i++){
-  console.log(arr[i])
-}
+
 
 
 ////////// PROBLEM 4 //////////
@@ -47,12 +43,7 @@ let evensArr = []
 */
 
 //Code Here
-for (let i = 0; i < nums.length; i++){
-    if (nums[i] % 2 === 0){
-        evensArr.push(nums[i])
-    }
-}
-console.log(evensArr)
+
 
 ////////// PROBLEM 5 //////////
 
@@ -66,17 +57,6 @@ var score = 89
 
 //Code Here
 
-if (score >= 90){
-    console.log("A")
-} else if (score >= 80) {
-    console.log("B")
-} else if (score >= 70){
-    console.log("C")
-} else if (score >= 60){
-    console.log("D")
-} else {
-    console.log("F")
-}
 
 
 ////////// Intermediate Problems //////////
@@ -90,7 +70,6 @@ var myFavoriteNumbers = [4,8,12,16,20,24, 50, 80];
 /*
   Create a variable named 'someNum' and set it equal to the fifth value of the 'myFavoriteNumbers' array.
 */
-let sumNum = myFavoriteNumbers[4];
 
 //Code Here
 
@@ -102,12 +81,7 @@ let sumNum = myFavoriteNumbers[4];
 
 //Code Here
 
-if (myFavoriteNumbers.length < 7){
-    console.log("There are not enough elements in this array")
-} else if (myFavoriteNumbers >= 7){
-    sumNum = myFavoriteNumbers[6];
-}
-console.log(sumNum);
+
 ////////// PROBLEM 8 //////////
 
 // Do not edit the code below.
@@ -118,11 +92,7 @@ var listOfNumbers = [1,2,3,4,5,6,7,8,9,10,11,12];
 
 //Code Here
 
-for (let i = 0; i < listOfNumbers.length; i++){
-    if (listOfNumbers[i] % 3 === 0){
-        console.log(`${listOfNumbers[i]} is divisible by 3`)
-    }
-}
+
 
 ////////// PROBLEM 9 //////////
 // Do not edit the code below.
@@ -132,9 +102,6 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 /*
   Loop backwards, starting at the end of the 'letters' array. Console log every item in the array.
 */
-for (let i = letters.length-1; i >= 0; i--){
-    console.log(letters[i])
-}
 
 //Code Here
 
@@ -148,35 +115,7 @@ for (let i = letters.length-1; i >= 0; i--){
 let letterGrade = 'B'
 // Do not edit the code above.
 
-/* Use a switch statement on 'letterGrade' and console.log the appropriate response.
 
-If A: "The student is doing excellently."
-If B: "The student is doing well."
-If C: "The student is doing alright."
-If D: "The student is not doing very well."
-If F: "The student is failing."
-If the letter grade is not one of the above letters, console.log 'Not an eligible grade.'
-*/
-
-//Code Here
-
-switch (letterGrade) {
-    case 'A':
-        console.log("The student is doing excellently.");
-        break;
-    case 'B':
-        console.log("The student is doing well");
-        break;
-    case 'C':
-        console.log("The student is doing alright");
-        break;
-    case 'D':
-        console.log("The student is is not doing well");
-        break;
-    case 'F':
-        console.log("The student is failing")
-        break;
-}
 
 
 
@@ -206,14 +145,3 @@ switch (letterGrade) {
 */
 
 //Code Here
-for (let i = 0; i <= 100; i++){
-    if (i % 3 === 0 && i % 5 === 0){
-        console.log("Devmountain")
-    } else if (i % 3 === 0){
-        console.log("dev")
-    }else if (i % 5 === 0){
-        console.log("mountain")
-    } else {
-        console.log(i)
-    }
-}
